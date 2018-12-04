@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
 import classes from '../../styles/Style.module.css';
+import ReactJson from 'react-json-view';
 
 class Insert extends Component {
 
@@ -40,6 +41,10 @@ class Insert extends Component {
           </div>
           <div> 
             <button className={classes.Button} onClick={this.insertOneMillion}>Insert 1M</button>
+          </div>
+          <div style={{fontSize: '13px'}}>
+            Random create object, example: <br />
+            <ReactJson src={{"k":1,"c":"0935211958","name":{"c":"5731334827"},"_id":"HjnepvzNM8Dz2Emv"}} theme="monokai" />
           </div>
         </div>
         <div>
