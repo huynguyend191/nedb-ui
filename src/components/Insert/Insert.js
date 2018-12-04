@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
-import classes from './Style.module.css';
+import classes from '../../styles/Style.module.css';
 
 class Insert extends Component {
 
@@ -43,6 +43,7 @@ class Insert extends Component {
           </div>
         </div>
         <div>
+          <div style={{fontWeight: 'bold', margin: '30px'}}>Result:</div>          
           <div className={classes.Result}>{data}</div>
         </div>
       </div>
